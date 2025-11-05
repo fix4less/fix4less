@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix4Less Appliance Repair</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('BG.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    nav {
+      background-color: #e0eaf5;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 18px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .form-container {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      float: right;
+      margin-top: -220px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .cta {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        float: none;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Fix4Less Appliance Repair</h1>
+      <p>Fast, honest, and affordable appliance repair service</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Refrigerator Repair</li>
+        <li>Washer & Dryer Repair</li>
+        <li>Oven & Stove Repair</li>
+        <li>Dishwasher Repair</li>
+        <li>Reverse Osmosis Systems</li>
+      </ul>
+
+      <div class="form-container">
+        <h3>Book a Service</h3>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <!-- Honeypot field to catch bots -->
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Disable CAPTCHA -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Optional redirect after submission -->
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="service">Service Needed:</label>
+          <select id="service" name="service">
+            <option value="refrigerator">Refrigerator Repair</option>
+            <option value="washer">Washer/Dryer Repair</option>
+            <option value="oven">Oven/Stove Repair</option>
+            <option value="dishwasher">Dishwasher Repair</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="details">Additional Details:</label>
+          <textarea id="details" name="details" rows="4"></textarea>
+
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Why Choose Us?</h2>
+      <p>We offer same-day service, fair pricing, and expert technicians like Lenny who come prepared with all necessary parts. Our customers love our honesty and reliability.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p>📞 Call: (760) 902-3516</p>
+        <p>📧 Email: support@fix4less.com</p>
+        <p>📍 Serving Desert Edge, CA and surrounding areas</p>
+      </div>
+    </section>
+
+    <div class="cta">
+      💥 Mention this website and get 25% off your next service!
+    </div>
+
+    <footer>
+      &copy; 2025 Fix4Less Appliance Repair. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
